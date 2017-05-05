@@ -21,7 +21,7 @@ $(document).ready(function(){
                $(".navbar-fixed-top .navbar-brand").css('padding', '15px 10px 10px 10px');
            }
 
-          $(".logo-img").attr("src","img/mustache-and-top-hat.png");
+          $(".logo-img").attr("src","img/mainicon.png");
        }
    });
     }
