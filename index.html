@@ -16,10 +16,10 @@
     <!-- Favicon settings-->
     <link rel="icon" href="img/favicon/favicon.ico">
 
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/tabicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/tabicon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/tabicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/tabicon.png">
 
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -75,10 +75,10 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse navbar-right">
               <ul class="nav navbar-nav">
-                <li><a class="scroll" href="#about">About</a></li>
-                <li><a class="scroll" href="#services">Services</a></li>
-                <li><a class="scroll" href="#calculator">Pricing</a></li>
-                <li><a class="scroll" href="#contact">Contact</a></li>
+                <li><a class="scroll" href="#about" style="font-weight:800px;color:white;">About</a></li>
+                <li><a class="scroll" href="#services" style="font-weight:800px;color:white;">Services</a></li>
+                <li><a class="scroll" href="#calculator" style="font-weight:800px;color:white;">Pricing</a></li>
+                <li><a class="scroll" href="#contact" style="font-weight:800px;color:white;">Contact</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div><!-- /.container -->
@@ -183,7 +183,7 @@
 
 <!--          Q1; page amount -->
            <div class="form-group">
-              <label class="col-md-8 control-label" for="q1">How many pages do you need?<br><small class="form-desc">Each topic usually has its own page eg; About, Contact Us, Services, Pricing, ...</small></label>
+              <label class="col-md-8 control-label" for="q1">Roughly how many jobs need to be done?<br><small class="form-desc">Separate complete jobs that need to be done.</small></label>
               <div class="col-md-4">
                <div class="btn-group form-buttongroup form-checker" data-toggle="buttons" id="bgroup">
                <input id="pagecount" class="form-control" type="number" step="2" value="0" min="0" max="20">
@@ -193,17 +193,17 @@
 
 <!--           Q2; login-->
            <div class="form-group">
-              <label class="col-md-8 control-label" for="q2">Should people be able to log in?<br><small class="form-desc"></small></label>
+              <label class="col-md-8 control-label" for="q2">Indoor or Outdoor?<br><small class="form-desc">If both, indicate in the description below.</small></label>
               <div class="col-md-4">
               <div class="radio form-checker">
-                  <input type="checkbox" name="q2checkbox1" value="1" data-size="small" data-on-text="Yes" data-off-text="No" checked>
+                  <input type="checkbox" name="q2checkbox1" value="1" data-size="small" data-on-text="Indoor" data-off-text="Outdoor" checked>
                 </div>
               </div>
            </div>
 
 <!--           Q3; profiles-->
            <div class="form-group">
-              <label class="col-md-8 control-label" for="q3">Do people need profiles?<br><small class="form-desc">Profiles allow people to display information</small></label>
+              <label class="col-md-8 control-label" for="q3">Installation?<br><small class="form-desc">Faucets, light fixtures, furniture, etc.</small></label>
               <div class="col-md-4">
               <div class="radio form-checker">
                   <input type="checkbox" name="q3checkbox1" value="1" data-size="small" data-on-text="Yes" data-off-text="No" checked>
@@ -213,7 +213,7 @@
 
 <!--            Q4; payments-->
             <div class="form-group">
-              <label class="col-md-8 control-label" for="q4">Do you need to accept payments?<br><small class="form-desc">Payments are used in webshops etc</small></label>
+              <label class="col-md-8 control-label" for="q4">Repairs?<br><small class="form-desc">Holes, leaks, broken frames, etc.</small></label>
               <div class="col-md-4">
               <div class="radio form-checker">
                   <input type="checkbox" name="q4checkbox1" value="1" data-size="small" data-on-text="Yes" data-off-text="No" checked>
@@ -223,7 +223,7 @@
 
 <!--            Q5; interaction-->
             <div class="form-group">
-              <label class="col-md-8 control-label" for="q5">Does your website need to interact with other apps or sites?<br><small class="form-desc">Tweet status updates, upload to youtube, ...</small></label>
+              <label class="col-md-8 control-label" for="q5">Do you have a tight schedule?<br><small class="form-desc">Does your job need to be finished at a specific time</small></label>
               <div class="col-md-4">
               <div class="radio form-checker">
                   <input type="checkbox" name="q5checkbox1" value="1" data-size="small" data-on-text="Yes" data-off-text="No" checked>
@@ -231,7 +231,7 @@
               </div>
             </div>
 
-<!--            Q6; search -->
+<!--            Q6; search
            <div class="form-group">
               <label class="col-md-8 control-label" for="q6">Should people be able to search on your website?<br><small class="form-desc"></small></label>
               <div class="col-md-4">
@@ -239,9 +239,9 @@
                   <input type="checkbox" name="q6checkbox1" value="1" data-size="small" data-on-text="Yes" data-off-text="No" checked>
                 </div>
               </div>
-            </div>
+            </div>-->
 
-<!--           Q7; cms-->
+<!--           Q7; cms
            <div class="form-group">
               <label class="col-md-8 control-label" for="q7">Does the website need a Content Management System (CMS)?<br><small class="form-desc">A CMS allows you to add content without writing code, like for a blog</small></label>
               <div class="col-md-4">
@@ -249,7 +249,7 @@
                   <input type="checkbox" name="q7checkbox1" value="1" data-size="small" data-on-text="Yes" data-off-text="No" checked>
                 </div>
               </div>
-            </div>
+            </div>-->
 
             <hr>
 
@@ -329,9 +329,9 @@
   <div class="container text-center">
     <div class="fnav">
       <p>
-          Copyright &copy; 2016 Your Website
+          Copyright &copy; 2017 The Handy Mountie LTD.
           <br>
-          <div class="credit">Created with <i class="fa fa-bolt"></i> by <a href="http://www.brechtgodts.com" target="_blank">Brecht Godts</a></div>
+        <!--  <div class="credit">Created with <i class="fa fa-bolt"></i> by <a href="http://www.brechtgodts.com" target="_blank">Brecht Godts</a></div> -->
         </p>
     </div>
 

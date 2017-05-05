@@ -11,7 +11,7 @@ $(document).ready(function(){
           $(".navbar .nav a").css('color', 'white');
           $(".navbar-fixed-top .nav").css('padding', '10px 10px 10px 10px');
           $(".navbar-fixed-top .navbar-brand").css('padding', '7px 10px 65px 10px');
-          $(".logo-img").attr("src","img/mainicon.png");
+          $(".logo-img").attr("src","img/mainiconwhite.png");
        } else {
           $('.navbar').css('background-color', 'transparent');
           $(".navbar .nav a").css('color', '#121d1f');
@@ -29,7 +29,7 @@ $(document).ready(function(){
     $('#navbar').on('show.bs.collapse', function () {
         $(".navbar").css('background-color', 'rgba(0,0,0,.95)');
         $(".navbar .nav a").css('color', 'white');
-        $(".logo-img").attr("src","img/mainicon.png");
+        $(".logo-img").attr("src","img/mainiconwhite.png");
     });
 
     $('#navbar li a').click(function() {
@@ -77,49 +77,49 @@ $(document).ready(function(){
 
         val = $("#pagecount").val();
         total = Math.floor(((parseInt(val) * 50) )); //+ 50/(val>0?val:1)
-        mssge += val + " pages \n";
+        mssge += val + " Jobs \n";
 
         //login
         if($("[name='q2checkbox1']").bootstrapSwitch('state')) {
             console.log("add q2checkbox1");
             total+=1000;
-            mssge += "Has login \n";
+            mssge += "Job location: \n";
         }
 
         //profiles
         if($("[name='q3checkbox1']").bootstrapSwitch('state')) {
             console.log("add q3checkbox1");
             total+=1500;
-            mssge += "Has user profiles \n";
+            mssge += "-Needs Installation \n";
         }
 
         //payments
         if($("[name='q4checkbox1']").bootstrapSwitch('state')) {
             console.log("add q4checkbox1");
             total+=1750;
-            mssge += "Handles payments \n";
+            mssge += "-Needs Repairs \n";
         }
 
         //interaction
         if($("[name='q5checkbox1']").bootstrapSwitch('state')) {
             console.log("add q5checkbox1");
             total+=2000;
-            mssge += "Interaction with other websites \n";
+            mssge += "Estimate your time frame: \n";
         }
 
         //search
-        if($("[name='q6checkbox1']").bootstrapSwitch('state')) {
-            console.log("add q6checkbox1");
-            total+=1500;
-            mssge += "Has search \n";
-        }
+      //  if($("[name='q6checkbox1']").bootstrapSwitch('state')) {
+      //      console.log("add q6checkbox1");
+        //    total+=1500;
+        //    mssge += "Has search \n";
+      //  }
 
         //cms
-        if($("[name='q7checkbox1']").bootstrapSwitch('state')) {
-            console.log("add q7checkbox1");
-            total+=2250;
-            mssge += "Has CMS \n";
-        }
+      //  if($("[name='q7checkbox1']").bootstrapSwitch('state')) {
+        //    console.log("add q7checkbox1");
+        //    total+=2250;
+        //    mssge += "Has CMS \n";
+      //  }
 
         mssge += total + "$ Total estimate \n";
         mssge += "-------------------------------------------";
